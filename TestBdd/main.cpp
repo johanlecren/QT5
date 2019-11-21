@@ -11,10 +11,10 @@ int main(int argc, char *argv[])
 
     QSqlDatabase bd;
     bd=QSqlDatabase::addDatabase("QMYSQL");
-    bd.setHostName("172.18.58.14");
+    bd.setHostName("172.18.58.7");
     bd.setUserName("snir");
     bd.setPassword("snir");
-    bd.setDatabaseName("france2015plus");
+    bd.setDatabaseName("france2018");
     if(!bd.open())
     {
         qDebug() << "pb accès bdd" << bd.lastError();
